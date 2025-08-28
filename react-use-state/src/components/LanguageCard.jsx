@@ -1,7 +1,7 @@
 
 const LanguageCard = ({ language }) => {
 
-    //controllo se language è vuoto
+    //controllo se language è vuoto, se è vuoto mostra un messaggio
     if(!language) {
         return (
             <div className="card">
@@ -12,7 +12,7 @@ const LanguageCard = ({ language }) => {
         )
     }
 
-    //mostro i dettagli del linguaggio
+   // Mostra titolo e descrizione del linguaggio selezionato
   return (
     <div className="card mx-1">
         <div className="card-body">

@@ -1,10 +1,14 @@
+ // import hook useState 
 import { useState } from "react";
-import languages from "./data/languages";
+// import dati linguaggi
+import languages from "./data/languages"; 
+// import bottone
 import LanguageButton from "./components/LanguageButton";
+// import card dettagli
 import LanguageCard from "./components/LanguageCard";
 
 function App() {
-  // stato per tenere traccia del linguaggio selezionato
+  // stato per tenere traccia del linguaggio selezionato (in questo caso languages[0] perchè parte dal primo, cioè HTML)
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 
   return (
@@ -13,6 +17,7 @@ function App() {
       <h1 className="mb-5">Learn Web development</h1>
       <div className="container">
         <div>
+          {/* Mappa dei bottoni per ogni linguaggio  */}
           {languages.map((lang) => {
             return (
               <LanguageButton
