@@ -5,7 +5,7 @@ const LanguageCard = ({ language }) => {
     if(!language) {
         return (
             <div className="card">
-                <div className="card-body">
+                <div className="card-body text-center">
                     Nessun linguaggio selezionato
                 </div>
             </div>
@@ -14,10 +14,10 @@ const LanguageCard = ({ language }) => {
 
     //mostro i dettagli del linguaggio
   return (
-    <div className="card">
+    <div className="card mx-1">
         <div className="card-body">
-            <h3 className="card-title"></h3>
-            <p className="card-text"></p>
+            <h3 className="card-title">{language.title}</h3>
+            <p className="card-text">{language.description}</p>
         </div>
     </div>
   )
